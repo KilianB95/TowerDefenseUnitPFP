@@ -62,10 +62,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3943442680377473046, guid: d37f8ce14dfcb134781f25ab2af099bd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ad8d8aa56363c1d46a8c3e34bc4a91d3, type: 2}
     - target: {fileID: 4929094491784704827, guid: d37f8ce14dfcb134781f25ab2af099bd,
         type: 3}
       propertyPath: m_Name
-      value: Default-Tile
+      value: Waypoint_Tile
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d37f8ce14dfcb134781f25ab2af099bd, type: 3}
