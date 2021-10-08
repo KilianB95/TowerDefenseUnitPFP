@@ -21,7 +21,7 @@ public class PathFollower : MonoBehaviour
     {
         transform.Translate(translation: Vector3.forward * _speed * Time.deltaTime);
 
-        float distaneToWaypoints = Vector3.Distance(a: transform.position, b: _currentWaypoints.GetPosition());
+        float distaneToWaypoints = Vector3.Distance(transform.position, _currentWaypoints.GetPosition());;
         if (distaneToWaypoints <= _arrivalThreshold)
         {
             if(_currentWaypoints == _path.GetPathEnd())
