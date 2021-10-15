@@ -6,7 +6,11 @@ public class HealthComponent : MonoBehaviour
 {
     [SerializeField]private float _startHealth;
     private float _currentHealth;
-
+    public float CurrentHealth
+    {
+        get { return _currentHealth; }
+    }
+    
     private void start()
     {
         _currentHealth = _startHealth;
@@ -21,9 +25,14 @@ public class HealthComponent : MonoBehaviour
         }
         Debug.Log("I Got Damage Chuckles");
     }
-    
-    private void Death()
+
+    protected virtual void HandleTakeDamage()
     {
+
+    }
+    
+    protected virtual void Death()
+    { 
         Debug.Log("I Died Chuckles");
     }
 }
